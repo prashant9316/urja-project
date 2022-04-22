@@ -42,25 +42,25 @@ const buttons = [
 
 
 const ResponsiveAppBar = () => {
-  const [state, setState] = useState({
-    mobileView: false,
-  })
+  // const [state, setState] = useState({
+  //   mobileView: false,
+  // })
 
-  const {mobileView} = state;
+  // const {mobileView} = state;
 
-  useEffect(() => {
-    const setResponsiveness = () => {
-      return window.innerWidth < 900? 
-      setState((prevState) => ({...prevState, mobileView: true}))
-      : setState((prevState) => ({...prevState, mobileView: false}))
-    };
+  // useEffect(() => {
+  //   const setResponsiveness = () => {
+  //     return window.innerWidth < 900? 
+  //     setState((prevState) => ({...prevState, mobileView: true}))
+  //     : setState((prevState) => ({...prevState, mobileView: false}))
+  //   };
 
-    setResponsiveness();
-    window.addEventListener("resize", () => setResponsiveness());
-    return () => {
-      window.removeEventListener("resize", () => setResponsiveness());
-    }
-  })
+  //   setResponsiveness();
+  //   window.addEventListener("resize", () => setResponsiveness());
+  //   return () => {
+  //     window.removeEventListener("resize", () => setResponsiveness());
+  //   }
+  // })
   const classes = useStyles();
 
   return (

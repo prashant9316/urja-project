@@ -3,7 +3,7 @@ import "./common_styles/variables.css";
 import "./common_styles/commonClasses.css";
 import { useRoutes, BrowserRouter as Router } from "react-router-dom";
 import Home from "./components/home/Home";
-import Navbar2 from "./components/navbar/Navbar-2"
+import Navbar2 from "./common/navbar"
 import Navbar from "./components/navbar/Navbar";
 import ElectricVehicles from "./components/electric vehicles/ElectricVehicles";
 import AboutUs from "./components/about us/AboutUs";
@@ -120,8 +120,8 @@ function App() {
 const AppWrapper = () => {
   return (
     <Router>
-      {/* <Navbar2 /> */}
-      <Navbar />
+      <Navbar2 />
+      {/* <Navbar /> */}
       <App />
    
       <Footer />
