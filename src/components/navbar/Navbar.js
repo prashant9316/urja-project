@@ -58,7 +58,7 @@ const ResponsiveAppBar = () => {
     setResponsiveness();
     window.addEventListener("resize", () => setResponsiveness());
     return () => {
-      // window.removeEventListener("resize", () => setResponsiveness());
+      window.removeEventListener("resize", () => setResponsiveness());
     }
   })
   const classes = useStyles();
