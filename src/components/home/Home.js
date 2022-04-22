@@ -2,13 +2,14 @@ import carousel1 from "../../assets/carousel/urja.jpeg";
 import carousel2 from "../../assets/carousel/WEB_1.jpg";
 import carousel3 from "../../assets/carousel/LEO_1.jpg";
 import Carousel from "react-material-ui-carousel";
-import About from "./About";
-import Product from "./OurProducts";
+import About from "./About2";
+import Product from "./Products";
 // import Features from "./Features";
 import CompanyStats from "./CompanyStats";
 import EnquiryForm from "./EnquiryForm";
 import Faq from "../FAQ/Faq";
 import booking from "../../assets/booking.png";
+// import MainBanner from "./MainBanner";
 
 const Home = () => {
   function reveal() {
@@ -41,7 +42,8 @@ const Home = () => {
   ];
   return (
     <div>
-      <Carousel sx={{ height: "600px", width: "100%" }}>
+      {/* <MainBanner /> */}
+      <Carousel sx={{ height: "600px", minHeight:"400px", width: "100%" }}>
         {items.map((item, i) => (
           <img
             src={item.src}

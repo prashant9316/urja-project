@@ -23,35 +23,42 @@ const CompanyStats = () => {
       >
         Company Statistics
       </Typography>
-      <div style={{ display: "flex", flexDirection: "column", marginTop: 30 }}>
+      <div style={{ display: "flex", marginTop: 30 }}>
         <div
           style={{
-            width: "75%",
+            width: "100%",
             display: "flex",
+            height: "fit",
             justifyContent: "space-between",
           }}
         >
-          <div className="outer-wrap">
-            <div className="icon">
-              <img className="project-img" src={office} alt="office" />
-            </div>
-            <div className="counter-text">
-              <h3 className="count-box counted">
-                <span className="count-text">4th</span>
-              </h3>
-              <h5>Best Eco-friendly Company For 2 Years In A Row!</h5>
-            </div>
-          </div>
-
-          <div className="outer-wrap">
-            <div className="icon">
-              <img className="project-img" src={dealers} alt="dealers" />
-            </div>
-            <div className="counter-text">
-              <h3 className="count-box counted">
-                <span className="count-text">22</span>+
-              </h3>
-              <h5>Years In Innovative Conservation Of Energy</h5>
+          <div className="row">
+              <div className="col-lg-4 col-sm-12">
+                  <div className="outer-wrap">
+                    <div className="icon">
+                      <img className="project-img" src={office} alt="office" />
+                    </div>
+                    <div className="counter-text">
+                      <h3 className="count-box counted">
+                        <span className="count-text">4th</span>
+                      </h3>
+                      <h5>Best Eco-friendly Company For 2 Years In A Row!</h5>
+                    </div>
+                  </div>
+              </div>
+              <div className="col-lg-4"></div>
+            <div className="col-lg-4">
+                <div className="outer-wrap">
+                    <div className="icon">
+                      <img className="project-img" src={dealers} alt="dealers" />
+                    </div>
+                    <div className="counter-text">
+                      <h3 className="count-box counted">
+                        <span className="count-text">22</span>+
+                      </h3>
+                      <h5>Years In Innovative Conservation Of Energy</h5>
+                    </div>
+                  </div>
             </div>
           </div>
         </div>
@@ -66,29 +73,38 @@ const CompanyStats = () => {
               justifyContent: "space-between",
             }}
           >
-            <div className="outer-wrap">
-              <div className="icon">
-                <img className="project-img" src={customers} alt="customers" />
+            <div className="row">
+              <div className="col-lg-4 col-sm-12">
+                  <div className="outer-wrap">
+                    <div className="icon">
+                      <img className="project-img" src={customers} alt="customers" />
+                    </div>
+                    <div className="counter-text">
+                      <h3 className="count-box counted">
+                        <span className="count-text">1322</span>+
+                      </h3>
+                      <h5>Residential Intallations</h5>
+                    </div>
+                </div>
               </div>
-              <div className="counter-text">
-                <h3 className="count-box counted">
-                  <span className="count-text">1322</span>+
-                </h3>
-                <h5>Residential Intallations</h5>
+              <div className="col-lg-3"></div>
+              <div className="col-lg-4 col-sm-12">
+                  <div className="outer-wrap">
+                    <div className="icon">
+                      <img className="project-img" src={customers} alt="customers" />
+                    </div>
+                    <div className="counter-text">
+                      <h3 className="count-box counted">
+                        <span className="count-text">100</span>+
+                      </h3>
+                      <h5>Corporate Turnkey Projects</h5>
+                    </div>
+                </div>
               </div>
             </div>
+            
 
-            <div className="outer-wrap">
-              <div className="icon">
-                <img className="project-img" src={customers} alt="customers" />
-              </div>
-              <div className="counter-text">
-                <h3 className="count-box counted">
-                  <span className="count-text">100</span>+
-                </h3>
-                <h5>Corporate Turnkey Projects</h5>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>

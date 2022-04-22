@@ -10,16 +10,16 @@ import {
     Link,
     MenuItem,
   } from "@material-ui/core";
-  import React, { useState, useEffect } from "react";
-  import { Link as RouterLink } from "react-router-dom";
-  import "./../common_styles/commonClasses.css";
-  import "./../components/navbar/navbar.css";
-  import logo from "./../assets/logo (8).png";
-    import CallOutlinedIcon from "@mui/icons-material/CallOutlined";
-    import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
+import React, { useState, useEffect } from "react";
+import { Link as RouterLink } from "react-router-dom";
+import "./../common_styles/commonClasses.css";
+import "./../components/navbar/navbar.css";
+import logo from "./../assets/logo (8).png";
+import CallOutlinedIcon from "@mui/icons-material/CallOutlined";
+import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 
 
-  import Avatar from "@mui/material/Avatar";
+import Avatar from "@mui/material/Avatar";
 
 
   const styles = {
@@ -43,13 +43,7 @@ import {
       display: "flex",
       flexDirection: "column",
       color: "var(--primarygreen)",
-    },
-    menuButton: {
-        fontFamily: "Open Sans, sans-serif",
-        fontWeight: 700,
-        size: "18px",
-        marginLeft: "38px",
-      },
+    }
   };
   const useStyles = makeStyles(styles);
   
@@ -91,7 +85,7 @@ import {
   
   export default function Header() {
     const classes = useStyles();
-    const { menuButton, header } = useStyles();
+    const { header } = useStyles();
   
     const [state, setState] = useState({
       mobileView: false,
@@ -249,22 +243,6 @@ import {
       return (
           <>
           <div className={classes.header}>
-      <div style={{ display: "flex", flexDirection: "column" }}>
-        <Typography
-          align="center"
-          fontWeight="bold"
-          style={{ color: "var(--darkblue)" }}
-        >
-          CIN: L67120DL1992PLC048983
-        </Typography>
-        {/* <Typography
-          align="center"
-          fontWeight="bold"
-          style={{ color: "var(--darkblue)", margin: 9 }}
-        >
-          GSTIN NO: 07AAACC0367M1ZN
-        </Typography> */}
-      </div>
       <div style={{ display: "flex" }}>
         <Box className={classes.box}>
           <CallOutlinedIcon fontSize="large" />
@@ -315,23 +293,6 @@ import {
       </Typography>
     );
   
-    const getMenuButtons = () => {
-      return headersData.map(({ label, href }) => {
-        return (
-          <Button
-            {...{
-              key: label,
-              color: "inherit",
-              to: href,
-              component: RouterLink,
-              className: menuButton,
-            }} 
-          >
-            {label}
-          </Button>
-        );
-      });
-    };
   
     return (
       <header>
