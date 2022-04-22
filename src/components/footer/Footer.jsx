@@ -14,6 +14,127 @@ export default function App() {
       <MDBContainer className="p-4">
         <section style={{ width: "100%" }}>
           <MDBRow style={{ display: "flex", justifyContent: "center" }}>
+            <div className="row">
+              <div className="col-lg-4 col-sm-4">
+                  <h5 className="text-uppercase">Useful Links</h5>
+                      <ul
+                        className="list-unstyled mb-0"
+                        style={{
+                          display: "flex",
+                          flexDirection: "column",
+                          alignItems: "flex-start",
+                        }}
+                      >
+                        <li>
+                          <a href="/" className="text-white">
+                            Home
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/career" className="text-white">
+                            Career
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/blog" className="text-white">
+                            Blog
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/terms&conditions" className="text-white">
+                            Terms & Conditions
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/privacy_policy" className="text-white">
+                            Privacy Policy
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/refund_policy" className="text-white">
+                            Refund Policy
+                          </a>
+                        </li>
+                      </ul>
+                      </div>
+              <div className="col-lg-4 col-sm-4">
+                <h5 className="text-uppercase">Corporate Address</h5>
+
+                    <ul
+                      className="list-unstyled mb-0"
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "flex-start",
+                        textAlign: "initial",
+                      }}
+                    >
+                      <li>
+                        <span className="text-white">
+                          <MDBIcon fas icon="phone-alt" />
+                          +91-11-25279143 | 45588275
+                        </span>
+                      </li>
+                      <li>
+                        <span className="text-white">
+                          <MDBIcon far icon="envelope" /> info@urjaglobal.in
+                        </span>
+                      </li>
+                      <li>
+                        <span className="text-white">
+                          <MDBIcon fas icon="map-marker-alt" />
+                          487/63, 1st Floor, National Market, Peeragarhi, New
+                          Delhi-110087
+                        </span>
+                      </li>
+                      <li>
+                        <span className="text-white">
+                          <MDBIcon fas icon="phone-alt" />
+                          Toll Free: 8000-500-789
+                        </span>
+                      </li>
+                    </ul>
+              </div>
+
+              <div className="col-lg-4 col-sm-4">
+                  <h5 className="text-uppercase">Factory Address</h5>
+
+                      <ul
+                        className="list-unstyled mb-0"
+                        style={{
+                          display: "flex",
+                          flexDirection: "column",
+                          alignItems: "flex-start",
+                        }}
+                      >
+                        <li>
+                          <span className="text-white">
+                            <MDBIcon fas icon="phone-alt" />
+                            +91-11-25279143 | 45588275
+                          </span>
+                        </li>
+                        <li>
+                          <span className="text-white">
+                            <MDBIcon far icon="envelope" /> info@urjaglobal.in
+                          </span>
+                        </li>
+                        <li>
+                          <span className="text-white">
+                            <MDBIcon fas icon="map-marker-alt" />
+                            Plot No.11, Sec.16, HSIIDC, Industrial complex, Bahadurgarh,
+                            Distt. Jhajjar, Haryana – 124507, India
+                          </span>
+                        </li>
+                        <li>
+                          <span className="text-white">
+                            <MDBIcon fas icon="map-marker-alt" />
+                            Urja Incubation/Training Center: 487/63, 1st Floor, National
+                            Market, Peeragarhi, New Delhi-87
+                          </span>
+                        </li>
+                      </ul>
+              </div>
+            </div>
             <MDBCol
               lg="3"
               md="6"
@@ -26,47 +147,7 @@ export default function App() {
                 // marginLeft: 60,
               }}
             >
-              <h5 className="text-uppercase">Useful Links</h5>
-
-              <ul
-                className="list-unstyled mb-0"
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "flex-start",
-                }}
-              >
-                <li>
-                  <a href="/" className="text-white">
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a href="/career" className="text-white">
-                    Career
-                  </a>
-                </li>
-                <li>
-                  <a href="/blog" className="text-white">
-                    Blog
-                  </a>
-                </li>
-                <li>
-                  <a href="/terms&conditions" className="text-white">
-                    Terms & Conditions
-                  </a>
-                </li>
-                <li>
-                  <a href="/privacy_policy" className="text-white">
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a href="/refund_policy" className="text-white">
-                    Refund Policy
-                  </a>
-                </li>
-              </ul>
+              
             </MDBCol>
 
             <MDBCol
@@ -81,42 +162,7 @@ export default function App() {
                 width: "30%",
               }}
             >
-              <h5 className="text-uppercase">Corporate Address</h5>
-
-              <ul
-                className="list-unstyled mb-0"
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "flex-start",
-                  textAlign: "initial",
-                }}
-              >
-                <li>
-                  <span className="text-white">
-                    <MDBIcon fas icon="phone-alt" />
-                    +91-11-25279143 | 45588275
-                  </span>
-                </li>
-                <li>
-                  <span className="text-white">
-                    <MDBIcon far icon="envelope" /> info@urjaglobal.in
-                  </span>
-                </li>
-                <li>
-                  <span className="text-white">
-                    <MDBIcon fas icon="map-marker-alt" />
-                    487/63, 1st Floor, National Market, Peeragarhi, New
-                    Delhi-110087
-                  </span>
-                </li>
-                <li>
-                  <span className="text-white">
-                    <MDBIcon fas icon="phone-alt" />
-                    Toll Free: 8000-500-789
-                  </span>
-                </li>
-              </ul>
+              
             </MDBCol>
 
             <MDBCol
@@ -131,42 +177,7 @@ export default function App() {
                 width: "30%",
               }}
             >
-              <h5 className="text-uppercase">Factory Address</h5>
-
-              <ul
-                className="list-unstyled mb-0"
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "flex-start",
-                }}
-              >
-                <li>
-                  <span className="text-white">
-                    <MDBIcon fas icon="phone-alt" />
-                    +91-11-25279143 | 45588275
-                  </span>
-                </li>
-                <li>
-                  <span className="text-white">
-                    <MDBIcon far icon="envelope" /> info@urjaglobal.in
-                  </span>
-                </li>
-                <li>
-                  <span className="text-white">
-                    <MDBIcon fas icon="map-marker-alt" />
-                    Plot No.11, Sec.16, HSIIDC, Industrial complex, Bahadurgarh,
-                    Distt. Jhajjar, Haryana – 124507, India
-                  </span>
-                </li>
-                <li>
-                  <span className="text-white">
-                    <MDBIcon fas icon="map-marker-alt" />
-                    Urja Incubation/Training Center: 487/63, 1st Floor, National
-                    Market, Peeragarhi, New Delhi-87
-                  </span>
-                </li>
-              </ul>
+              
             </MDBCol>
           </MDBRow>
         </section>
